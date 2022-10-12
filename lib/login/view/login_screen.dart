@@ -26,9 +26,6 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     final dio = Dio();
 
-    const apiUrl = 'https://api-partners.dver.link/';
-    const userApi = 'users/login?v=2';
-
     return DefaultLayout(
       child: SingleChildScrollView(  // 화면을 스크롤이 가능하도록 만듬. (키보드 올라오면서 짤리는 현상 방지)
         keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,   // 기본값은 manual, onDrag로 할 경우 Input창 외에 다른 부분 터치하면 키보드 Hide

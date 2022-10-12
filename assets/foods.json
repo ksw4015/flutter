@@ -1,0 +1,95 @@
+{
+  "foods": [
+    {
+      "id": "1",
+      "name": "체리나무",
+      "thumbUrl": "assets/img/food/cherry.png",
+      "tags": [
+        "과일",
+        "체리",
+        "빨간맛"
+      ],
+      "priceRange": "medium",
+      "ratings": 4.51,
+      "ratingsCount": 100,
+      "deliveryTime": 15,
+      "deliveryFee": 2000
+    },
+    {
+      "id": "2",
+      "name": "레몬과일",
+      "thumbUrl": "assets/img/food/lemon.png",
+      "tags": [
+        "과일",
+        "치즈",
+        "노란맛"
+      ],
+      "priceRange": "high",
+      "ratings": 3.51,
+      "ratingsCount": 100,
+      "deliveryTime": 20,
+      "deliveryFee": 3000
+    },
+    {
+      "id": "3",
+      "name": "라임나무",
+      "thumbUrl": "assets/img/food/lime.png",
+      "tags": [
+        "라임오렌지",
+        "과일",
+        "연두색"
+      ],
+      "priceRange": "low",
+      "ratings": 2.51,
+      "ratingsCount": 100,
+      "deliveryTime": 25,
+      "deliveryFee": 1000
+    },
+    {
+      "id": "4",
+      "name": "무화과",
+      "thumbUrl": "assets/img/food/pomegranate.png",
+      "tags": [
+        "과일",
+        "무화과",
+        "이상한맛"
+      ],
+      "priceRange": "low",
+      "ratings": 4.02,
+      "ratingsCount": 100,
+      "deliveryTime": 20,
+      "deliveryFee": 4000
+    },
+    {
+      "id": "5",
+      "name": "스트로베리",
+      "thumbUrl": "assets/img/food/strawberry.png",
+      "tags": [
+        "과일",
+        "딸기",
+        "빨간맛"
+      ],
+      "priceRange": "medium",
+      "ratings": 4.33,
+      "ratingsCount": 100,
+      "deliveryTime": 10,
+      "deliveryFee": 1500
+    },
+    {
+      "id": "6",
+      "name": "토마토는 채소다",
+      "thumbUrl": "assets/img/food/tomato.png",
+      "tags": [
+        "토마토",
+        "채소",
+        "야채맛"
+      ],
+      "priceRange": "medium",
+      "ratings": 1.51,
+      "ratingsCount": 100,
+      "deliveryTime": 30,
+      "deliveryFee": 3500
+    }
+  ]
+}
+
