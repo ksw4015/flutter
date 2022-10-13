@@ -4,6 +4,7 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutteractual/common/const/colors.dart';
 import 'package:flutteractual/common/const/data_key.dart';
 import 'package:flutteractual/common/layout/default_layout.dart';
+import 'package:flutteractual/root/view/root_tab.dart';
 
 import '../../common/component/common_text_form_field.dart';
 
@@ -76,6 +77,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     await storage.write(key: REFRESH_TOKEN_KEY, value: refreshToken);
 
                     // Move Screen
+                    Navigator.of(context).pushAndRemoveUntil(
+                      MaterialPageRoute(
+                        builder: (_) => RootTab()
+                      ), (route) => false,
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: PRIMARY_COLOR   // primary -> backgroundColor로 속성 이름 변경됨.

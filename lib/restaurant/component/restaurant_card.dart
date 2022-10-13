@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutteractual/common/const/colors.dart';
+import 'package:flutteractual/restaurant/component/product_card.dart';
 import 'package:flutteractual/restaurant/model/restaurant_model.dart';
 
 class RestaurantCard extends StatelessWidget {
@@ -101,7 +102,7 @@ class RestaurantCard extends StatelessWidget {
               )
             ],
           ),
-        )
+        ),
       ],
     );
   }
