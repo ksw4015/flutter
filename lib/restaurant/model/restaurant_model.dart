@@ -6,7 +6,7 @@ enum RestaurantPriceRange {
   high, medium, low
 }
 
-@JsonSerializable()
+@JsonSerializable()  // 적용 후 터미널에서 명령어 실행 'flutter pub run build_runner build'
 class RestaurantModel {
   final String id;
   final String name;
