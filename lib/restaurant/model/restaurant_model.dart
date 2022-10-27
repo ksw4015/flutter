@@ -1,3 +1,4 @@
+import 'package:flutteractual/common/utils/data_utils.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'restaurant_model.g.dart';
@@ -12,7 +13,7 @@ class RestaurantModel {
   final String name;
   // 변수 위에 JsonKey 어노테이션 선언 시 직렬화 과정에서 지정한 함수 실행 가능
   @JsonKey(
-    fromJson: pathToUrl  // 파라미터 없이 함수명만 입력
+    fromJson: DataUtils.pathToUrl  // 파라미터 없이 함수명만 입력
   )
   final String thumbUrl;
   final List<String> tags;
@@ -40,8 +41,4 @@ class RestaurantModel {
   Map<String, dynamic> toJson() =>
       _$RestaurantModelToJson(this);
 
-  // JsonKey에서 사용할 static 함수
-  static pathToUrl(String value) {
-    return 'https://$value';
-  }
 }

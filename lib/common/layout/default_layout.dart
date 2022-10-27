@@ -22,7 +22,9 @@ class DefaultLayout extends StatelessWidget {
     return Scaffold(
       backgroundColor: backgroundColor ?? Colors.white,
       appBar: renderAppBar(),
-      body: child,
+      body: SafeArea(
+        child: child
+      ),
       bottomNavigationBar: bottomNavigationBar,
     );
   }

@@ -36,7 +36,7 @@ class RestaurantDetailScreen extends StatelessWidget {
           }
 
           final detailItem = RestaurantDetailModel.fromJson(
-            json: snapshot.data!,
+            snapshot.data!,
           );
 
           return CustomScrollView(   // Flutter의 ListView는 CustomScrollView + SliverList로 만들어졌다.

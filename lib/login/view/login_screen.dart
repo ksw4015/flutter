@@ -7,6 +7,7 @@ import 'package:flutteractual/common/layout/default_layout.dart';
 import 'package:flutteractual/root/view/root_tab.dart';
 
 import '../../common/component/common_text_form_field.dart';
+import '../../restaurant/view/order_list_screen.dart';
 
 class LoginScreen extends StatefulWidget {
 
@@ -73,15 +74,17 @@ class _LoginScreenState extends State<LoginScreen> {
                     final accessToken = response.data['accessToken'];
                     final refreshToken = response.data['refreshToken'];
 
+                    print('Access: $accessToken, Refresh: $refreshToken');
+
                     await storage.write(key: ACCESS_TOKEN_KEY, value: accessToken);
                     await storage.write(key: REFRESH_TOKEN_KEY, value: refreshToken);
 
                     // Move Screen
-                    Navigator.of(context).pushAndRemoveUntil(
-                      MaterialPageRoute(
-                        builder: (_) => RootTab()
-                      ), (route) => false,
-                    );
+                    // Navigator.of(context).pushAndRemoveUntil(
+                    //   MaterialPageRoute(
+                    //     builder: (_) => RootTab()
+                    //   ), (route) => false,
+                    // );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: PRIMARY_COLOR   // primary -> backgroundColor로 속성 이름 변경됨.
@@ -89,7 +92,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Text('로그인'),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).pushAndRemoveUntil(
+                      MaterialPageRoute(
+                          builder: (_) => OrderListScreen()
+                      ), (route) => false,
+                    );
+                  },
                   style: TextButton.styleFrom(
                     foregroundColor: Colors.black  // primary -> foregroundColor로 속성 이름 변경됨.
                   ),
